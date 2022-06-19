@@ -11,6 +11,7 @@
 		44943526285BD8AA00A91228 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44943525285BD8AA00A91228 /* ContentView.swift */; };
 		44943528285BD8AD00A91228 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44943527285BD8AD00A91228 /* Assets.xcassets */; };
 		4494352B285BD8AD00A91228 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4494352A285BD8AD00A91228 /* Preview Assets.xcassets */; };
+		44960851285EFDCB0002EA51 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44960850285EFDCB0002EA51 /* LaunchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		44943525285BD8AA00A91228 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		44943527285BD8AD00A91228 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4494352A285BD8AD00A91228 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		44960850285EFDCB0002EA51 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		44943522285BD8AA00A91228 /* EveryDay */ = {
 			isa = PBXGroup;
 			children = (
+				4496084E285EFC890002EA51 /* Modules */,
 				44943523285BD8AA00A91228 /* EveryDayApp.swift */,
 				44943525285BD8AA00A91228 /* ContentView.swift */,
 				44943527285BD8AD00A91228 /* Assets.xcassets */,
@@ -67,6 +70,22 @@
 				4494352A285BD8AD00A91228 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4496084E285EFC890002EA51 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4496084F285EFDB50002EA51 /* LaunchScreen */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4496084F285EFDB50002EA51 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				44960850285EFDCB0002EA51 /* LaunchView.swift */,
+			);
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44943526285BD8AA00A91228 /* ContentView.swift in Sources */,
+				44960851285EFDCB0002EA51 /* LaunchView.swift in Sources */,
 				44943524285BD8AA00A91228 /* EveryDayApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
