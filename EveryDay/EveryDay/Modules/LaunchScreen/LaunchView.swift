@@ -14,7 +14,24 @@ struct LaunchView: View {
                 .resizable()
                 .ignoresSafeArea()
                 .aspectRatio(contentMode: .fill)
-            Text("EveryDay");
+            VStack(spacing: 0) {
+                HStack(){
+                    Text("EveryDay")
+                        .font(.custom("AdleryPro-Swash", size: 72))
+                        .foregroundColor(.white)
+                }
+                .frame(maxWidth: .infinity)
+                HStack(){
+                    Spacer()
+                    Text("твой личный дневник")
+                        .font(.custom("AdleryPro-Swash", size: 24))
+                        .foregroundColor(.white)
+                }
+                .frame(maxWidth: .infinity)
+                .padding(.bottom, 250)
+            }
+            .frame(maxWidth: .infinity)
+            .padding()
         }
     }
 }

@@ -14,7 +14,19 @@ struct EveryDayApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            LaunchView()
+                .onAppear(){
+                    for family: String in UIFont.familyNames
+                            {
+                                print(family)
+                                for names: String in UIFont.fontNames(forFamilyName: family)
+                                {
+                                    print("== \(names)")
+                                }
+                            }
+                }
+            //ContentView()
         }
     }
 }
