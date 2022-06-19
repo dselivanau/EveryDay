@@ -16,16 +16,12 @@ struct LaunchView: View {
                 .aspectRatio(contentMode: .fill)
             VStack(spacing: 0) {
                 HStack(){
-                    Text("EveryDay")
-                        .font(.custom("AdleryPro-Swash", size: 72))
-                        .foregroundColor(.white)
+                    AdlerySwashText(title: "EveryDay", size: 72, foregroundColor: .white)
                 }
                 .frame(maxWidth: .infinity)
                 HStack(){
                     Spacer()
-                    Text("твой личный дневник")
-                        .font(.custom("AdleryPro-Swash", size: 24))
-                        .foregroundColor(.white)
+                    AdlerySwashText(title: "твой личный дневник", size: 24, foregroundColor: .white)
                 }
                 .frame(maxWidth: .infinity)
                 .padding(.bottom, 250)
