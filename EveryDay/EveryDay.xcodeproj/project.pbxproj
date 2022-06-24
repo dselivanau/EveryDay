@@ -7,18 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		440F68712864FDF6009DADB2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440F68702864FDF6009DADB2 /* HomeView.swift */; };
+		440F68732864FE1F009DADB2 /* WishesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440F68722864FE1F009DADB2 /* WishesView.swift */; };
+		440F68752864FE2D009DADB2 /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440F68742864FE2D009DADB2 /* DiaryView.swift */; };
+		440F68772864FE3C009DADB2 /* SleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440F68762864FE3C009DADB2 /* SleepView.swift */; };
+		44877418285F539000736C6E /* AdlerySwashText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44877417285F539000736C6E /* AdlerySwashText.swift */; };
+		4487741A285F59A700736C6E /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44877419285F59A700736C6E /* RootTabView.swift */; };
 		44943524285BD8AA00A91228 /* EveryDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44943523285BD8AA00A91228 /* EveryDayApp.swift */; };
-		44943526285BD8AA00A91228 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44943525285BD8AA00A91228 /* ContentView.swift */; };
 		44943528285BD8AD00A91228 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44943527285BD8AD00A91228 /* Assets.xcassets */; };
 		4494352B285BD8AD00A91228 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4494352A285BD8AD00A91228 /* Preview Assets.xcassets */; };
+		44960851285EFDCB0002EA51 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44960850285EFDCB0002EA51 /* LaunchView.swift */; };
+		44960857285F17350002EA51 /* Adlery-Swash-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44960856285F17350002EA51 /* Adlery-Swash-trial.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		440F68702864FDF6009DADB2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		440F68722864FE1F009DADB2 /* WishesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishesView.swift; sourceTree = "<group>"; };
+		440F68742864FE2D009DADB2 /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
+		440F68762864FE3C009DADB2 /* SleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepView.swift; sourceTree = "<group>"; };
+		44599C67285DE82300F3E600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		44877417285F539000736C6E /* AdlerySwashText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdlerySwashText.swift; sourceTree = "<group>"; };
+		44877419285F59A700736C6E /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 		44943520285BD8AA00A91228 /* EveryDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EveryDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44943523285BD8AA00A91228 /* EveryDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveryDayApp.swift; sourceTree = "<group>"; };
-		44943525285BD8AA00A91228 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		44943527285BD8AD00A91228 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4494352A285BD8AD00A91228 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		44960850285EFDCB0002EA51 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		44960856285F17350002EA51 /* Adlery-Swash-trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Adlery-Swash-trial.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +47,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		440F686B2864FBA3009DADB2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				440F68702864FDF6009DADB2 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		440F686C2864FC15009DADB2 /* Wishes */ = {
+			isa = PBXGroup;
+			children = (
+				440F68722864FE1F009DADB2 /* WishesView.swift */,
+			);
+			path = Wishes;
+			sourceTree = "<group>";
+		};
+		440F686D2864FC57009DADB2 /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				440F68742864FE2D009DADB2 /* DiaryView.swift */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		440F686E2864FC97009DADB2 /* Sleep */ = {
+			isa = PBXGroup;
+			children = (
+				440F68762864FE3C009DADB2 /* SleepView.swift */,
+			);
+			path = Sleep;
+			sourceTree = "<group>";
+		};
+		440F686F2864FCE9009DADB2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				44943523285BD8AA00A91228 /* EveryDayApp.swift */,
+				44877419285F59A700736C6E /* RootTabView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		44943517285BD8A900A91228 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +107,12 @@
 		44943522285BD8AA00A91228 /* EveryDay */ = {
 			isa = PBXGroup;
 			children = (
-				44943523285BD8AA00A91228 /* EveryDayApp.swift */,
-				44943525285BD8AA00A91228 /* ContentView.swift */,
+				440F686F2864FCE9009DADB2 /* App */,
+				4496084E285EFC890002EA51 /* Modules */,
 				44943527285BD8AD00A91228 /* Assets.xcassets */,
+				44599C67285DE82300F3E600 /* Info.plist */,
+				44960859285F444F0002EA51 /* CustomViews */,
+				44960855285F16910002EA51 /* Fonts */,
 				44943529285BD8AD00A91228 /* Preview Content */,
 			);
 			path = EveryDay;
@@ -65,6 +124,50 @@
 				4494352A285BD8AD00A91228 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4496084E285EFC890002EA51 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4496084F285EFDB50002EA51 /* LaunchScreen */,
+				440F686B2864FBA3009DADB2 /* Home */,
+				440F686C2864FC15009DADB2 /* Wishes */,
+				440F686D2864FC57009DADB2 /* Diary */,
+				440F686E2864FC97009DADB2 /* Sleep */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4496084F285EFDB50002EA51 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				44960850285EFDCB0002EA51 /* LaunchView.swift */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		44960855285F16910002EA51 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				44960856285F17350002EA51 /* Adlery-Swash-trial.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		44960859285F444F0002EA51 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				4496085A285F449B0002EA51 /* Text */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		4496085A285F449B0002EA51 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				44877417285F539000736C6E /* AdlerySwashText.swift */,
+			);
+			path = Text;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4494352B285BD8AD00A91228 /* Preview Assets.xcassets in Resources */,
+				44960857285F17350002EA51 /* Adlery-Swash-trial.ttf in Resources */,
 				44943528285BD8AD00A91228 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +241,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44943526285BD8AA00A91228 /* ContentView.swift in Sources */,
+				44877418285F539000736C6E /* AdlerySwashText.swift in Sources */,
+				44960851285EFDCB0002EA51 /* LaunchView.swift in Sources */,
+				4487741A285F59A700736C6E /* RootTabView.swift in Sources */,
+				440F68752864FE2D009DADB2 /* DiaryView.swift in Sources */,
+				440F68732864FE1F009DADB2 /* WishesView.swift in Sources */,
+				440F68712864FDF6009DADB2 /* HomeView.swift in Sources */,
+				440F68772864FE3C009DADB2 /* SleepView.swift in Sources */,
 				44943524285BD8AA00A91228 /* EveryDayApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,9 +380,9 @@
 				DEVELOPMENT_TEAM = 4C4NZV4M6R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EveryDay/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,9 +409,9 @@
 				DEVELOPMENT_TEAM = 4C4NZV4M6R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EveryDay/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
