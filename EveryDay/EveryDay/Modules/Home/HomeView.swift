@@ -9,7 +9,15 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text("Home view!")
+        NavigationView(){
+            Text("Home view!")
+                .navigationTitle("Home")
+                .toolbar(){
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Image(systemName: "gearshape")
+                    }
+                }
+        }
     }
 }
 
