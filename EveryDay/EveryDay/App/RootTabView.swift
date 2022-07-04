@@ -12,19 +12,19 @@ struct RootTabView: View {
         TabView(){
             HomeView()
                 .tabItem{
-                    Label("Home", systemImage: "house")
+                    Label(LocalizedStringKey("Home"), systemImage: "house")
                 }
             WishesView()
                 .tabItem{
-                    Label("Wishes", systemImage: "person.icloud")
+                    Label(LocalizedStringKey("Wishes"), systemImage: "person.icloud")
                 }
             DiaryView()
                 .tabItem{
-                    Label("Diary", systemImage: "book")
+                    Label(LocalizedStringKey("Diary"), systemImage: "book")
                 }
             SleepView()
                 .tabItem{
-                    Label("Sleep", systemImage: "powersleep")
+                    Label(LocalizedStringKey("Sleep"), systemImage: "powersleep")
                 }
         }
     }
