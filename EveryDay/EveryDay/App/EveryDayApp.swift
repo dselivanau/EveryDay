@@ -10,13 +10,13 @@ import SwiftUI
 @main
 struct EveryDayApp: App {
     
-//    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     var body: some Scene {
         WindowGroup {
             LaunchView()
                 .onAppear(){
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                         let window = UIApplication
                             .shared
                             .connectedScenes
@@ -38,9 +38,25 @@ struct EveryDayApp: App {
     }
 }
 
-//class AppDelegate: NSObject, UIApplicationDelegate {
-//    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-//
-//        return true;
-//    }
-//}
+class AppDelegate: NSObject, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+
+        if #available(iOS 15, *) {
+//                        let navigationBarAppearance = UINavigationBarAppearance()
+//                        navigationBarAppearance.configureWithOpaqueBackground()
+//                        navigationBarAppearance.titleTextAttributes = [
+//                            NSAttributedString.Key.foregroundColor : UIColor.white
+//                        ]
+//                        navigationBarAppearance.backgroundColor = UIColor.blue
+//                        UINavigationBar.appearance().standardAppearance = navigationBarAppearance
+//                        UINavigationBar.appearance().compactAppearance = navigationBarAppearance
+//                        UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
+                    
+                    let tabBarApperance = UITabBarAppearance()
+                    tabBarApperance.configureWithOpaqueBackground()
+                    UITabBar.appearance().scrollEdgeAppearance = tabBarApperance
+                    UITabBar.appearance().standardAppearance = tabBarApperance
+                }
+        return true;
+    }
+}
