@@ -11,6 +11,7 @@
 		440F68732864FE1F009DADB2 /* WishesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440F68722864FE1F009DADB2 /* WishesView.swift */; };
 		440F68752864FE2D009DADB2 /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440F68742864FE2D009DADB2 /* DiaryView.swift */; };
 		440F68772864FE3C009DADB2 /* SleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440F68762864FE3C009DADB2 /* SleepView.swift */; };
+		446B983128CE8E1E0064B43E /* CalendarDateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B983028CE8E1E0064B43E /* CalendarDateModel.swift */; };
 		44877418285F539000736C6E /* AdlerySwashText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44877417285F539000736C6E /* AdlerySwashText.swift */; };
 		4487741A285F59A700736C6E /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44877419285F59A700736C6E /* RootTabView.swift */; };
 		44943524285BD8AA00A91228 /* EveryDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44943523285BD8AA00A91228 /* EveryDayApp.swift */; };
@@ -18,6 +19,7 @@
 		4494352B285BD8AD00A91228 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4494352A285BD8AD00A91228 /* Preview Assets.xcassets */; };
 		44960851285EFDCB0002EA51 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44960850285EFDCB0002EA51 /* LaunchView.swift */; };
 		44960857285F17350002EA51 /* Adlery-Swash-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44960856285F17350002EA51 /* Adlery-Swash-trial.ttf */; };
+		44AA423428CB9015004F690D /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AA423328CB9015004F690D /* CustomDatePicker.swift */; };
 		44ACB24628737BE300456E7F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44ACB24828737BE300456E7F /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,7 @@
 		440F68742864FE2D009DADB2 /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
 		440F68762864FE3C009DADB2 /* SleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepView.swift; sourceTree = "<group>"; };
 		44599C67285DE82300F3E600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		446B983028CE8E1E0064B43E /* CalendarDateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDateModel.swift; sourceTree = "<group>"; };
 		44877417285F539000736C6E /* AdlerySwashText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdlerySwashText.swift; sourceTree = "<group>"; };
 		44877419285F59A700736C6E /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 		44943520285BD8AA00A91228 /* EveryDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EveryDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,6 +38,7 @@
 		4494352A285BD8AD00A91228 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		44960850285EFDCB0002EA51 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		44960856285F17350002EA51 /* Adlery-Swash-trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Adlery-Swash-trial.ttf"; sourceTree = "<group>"; };
+		44AA423328CB9015004F690D /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
 		44ACB24728737BE300456E7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		44ACB24928737CB500456E7F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +73,8 @@
 		440F686D2864FC57009DADB2 /* Diary */ = {
 			isa = PBXGroup;
 			children = (
+				446B982F28CE8DED0064B43E /* Model */,
+				44AA423228CB8FD0004F690D /* DatePicker */,
 				440F68742864FE2D009DADB2 /* DiaryView.swift */,
 			);
 			path = Diary;
@@ -89,6 +95,14 @@
 				44877419285F59A700736C6E /* RootTabView.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		446B982F28CE8DED0064B43E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				446B983028CE8E1E0064B43E /* CalendarDateModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		44943517285BD8A900A91228 = {
@@ -174,6 +188,14 @@
 			path = Text;
 			sourceTree = "<group>";
 		};
+		44AA423228CB8FD0004F690D /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				44AA423328CB9015004F690D /* CustomDatePicker.swift */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -254,7 +276,9 @@
 				440F68732864FE1F009DADB2 /* WishesView.swift in Sources */,
 				440F68712864FDF6009DADB2 /* HomeView.swift in Sources */,
 				440F68772864FE3C009DADB2 /* SleepView.swift in Sources */,
+				446B983128CE8E1E0064B43E /* CalendarDateModel.swift in Sources */,
 				44943524285BD8AA00A91228 /* EveryDayApp.swift in Sources */,
+				44AA423428CB9015004F690D /* CustomDatePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
