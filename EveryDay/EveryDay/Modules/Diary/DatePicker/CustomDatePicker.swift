@@ -18,17 +18,6 @@ struct CustomDatePicker: View {
             let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
             
             HStack(spacing: 20){
-                VStack(alignment: .leading, spacing: 10){
-                    Text(extraData()[0])
-                        .font(.caption)
-                        .fontWeight(.semibold)
-                    
-                    Text(extraData()[1])
-                        .font(.title.bold())
-                }
-                
-                Spacer(minLength: 0)
-                
                 Button{
                     withAnimation {
                         currentMonth -= 1
@@ -37,6 +26,10 @@ struct CustomDatePicker: View {
                     Image(systemName: "chevron.left")
                         .font(.title2)
                 }
+                Text(extraData()[1])
+                    .font(.title.bold())
+                Text(extraData()[0])
+                    .font(.title.bold())
                 
                 Button{
                     withAnimation {
