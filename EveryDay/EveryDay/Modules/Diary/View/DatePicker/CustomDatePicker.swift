@@ -11,6 +11,7 @@ struct CustomDatePicker: View {
     
     @Binding var currentDate: Date
     @Binding var currentMonth: Int
+    @Binding var selectedDate: Date?
     
     var body: some View {
         VStack(spacing: 35){
@@ -26,6 +27,7 @@ struct CustomDatePicker: View {
                     Image(systemName: "chevron.left")
                         .font(.title2)
                 }
+                
                 Text(extraData()[1])
                     .font(.title.bold())
                 Text(extraData()[0])
@@ -61,6 +63,10 @@ struct CustomDatePicker: View {
             LazyVGrid(columns: columns, spacing: 15) {
                 ForEach(exctractDate()) { value in
                     CardView(value: value)
+                        .onTapGesture {
+                            //currentDate = value.date
+                            selectedDate = value.date
+                        }
                 }
             }
         }
