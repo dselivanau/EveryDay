@@ -11,6 +11,11 @@ struct WishesView: View {
     @State private var date = Date()
     @State private var testText: String = ""
     var body: some View {
+//        ScrollView(.vertical, showsIndicators: false){
+//            VStack(spacing: 20){
+//                CustomDatePicker(currentDate: $date)
+//            }
+//        }
         ScrollView(){
                     DatePicker(
                             "Start Date",
@@ -30,7 +35,7 @@ struct WishesView: View {
                             .overlay(RoundedRectangle(cornerRadius: 16)
                                 .stroke(.gray, lineWidth: 1))
                             .textFieldStyle(.roundedBorder)
-        
+
                         Text("Положительная установка на день:")
                             .frame(maxWidth: .infinity, alignment: .leading)
                         TextEditor(text: $testText)
@@ -38,7 +43,7 @@ struct WishesView: View {
                             .overlay(RoundedRectangle(cornerRadius: 16)
                                 .stroke(.gray, lineWidth: 1))
                             .textFieldStyle(.roundedBorder)
-        
+
                         Text("Прекрасные события, которые произошли со мной сегодня:")
                             .frame(maxWidth: .infinity, alignment: .leading)
                         TextEditor(text: $testText)
@@ -46,7 +51,7 @@ struct WishesView: View {
                             .overlay(RoundedRectangle(cornerRadius: 16)
                                 .stroke(.gray, lineWidth: 1))
                             .textFieldStyle(.roundedBorder)
-        
+
                         Text("Заметки:")
                             .frame(maxWidth: .infinity, alignment: .leading)
                         TextEditor(text: $testText)
@@ -54,10 +59,10 @@ struct WishesView: View {
                             .overlay(RoundedRectangle(cornerRadius: 16)
                                 .stroke(.gray, lineWidth: 1))
                             .textFieldStyle(.roundedBorder)
-        
+
                         HStack(){
                             Button{
-        
+
                             } label:{
                                 Image(systemName: "plus.circle")
                             }
@@ -78,9 +83,9 @@ struct WishesView: View {
         //                TextField("test", text: $username)
         //                    .textFieldStyle(.roundedBorder)
                     }
-        
-        
-        
+
+
+
                 }
                 .padding([.top, .leading, .trailing])
     }

@@ -11,6 +11,9 @@
 		440F68732864FE1F009DADB2 /* WishesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440F68722864FE1F009DADB2 /* WishesView.swift */; };
 		440F68752864FE2D009DADB2 /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440F68742864FE2D009DADB2 /* DiaryView.swift */; };
 		440F68772864FE3C009DADB2 /* SleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440F68762864FE3C009DADB2 /* SleepView.swift */; };
+		4438A01228CFCDD500AA699A /* DiaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4438A01128CFCDD500AA699A /* DiaryViewModel.swift */; };
+		4438A01628CFDDBC00AA699A /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4438A01528CFDDBC00AA699A /* DateExtensions.swift */; };
+		4438A01828CFDE8B00AA699A /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4438A01728CFDE8B00AA699A /* ColorExtensions.swift */; };
 		446B983128CE8E1E0064B43E /* CalendarDateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B983028CE8E1E0064B43E /* CalendarDateModel.swift */; };
 		44877418285F539000736C6E /* AdlerySwashText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44877417285F539000736C6E /* AdlerySwashText.swift */; };
 		4487741A285F59A700736C6E /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44877419285F59A700736C6E /* RootTabView.swift */; };
@@ -28,6 +31,9 @@
 		440F68722864FE1F009DADB2 /* WishesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishesView.swift; sourceTree = "<group>"; };
 		440F68742864FE2D009DADB2 /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
 		440F68762864FE3C009DADB2 /* SleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepView.swift; sourceTree = "<group>"; };
+		4438A01128CFCDD500AA699A /* DiaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewModel.swift; sourceTree = "<group>"; };
+		4438A01528CFDDBC00AA699A /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		4438A01728CFDE8B00AA699A /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		44599C67285DE82300F3E600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		446B983028CE8E1E0064B43E /* CalendarDateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDateModel.swift; sourceTree = "<group>"; };
 		44877417285F539000736C6E /* AdlerySwashText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdlerySwashText.swift; sourceTree = "<group>"; };
@@ -74,8 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				446B982F28CE8DED0064B43E /* Model */,
-				44AA423228CB8FD0004F690D /* DatePicker */,
-				440F68742864FE2D009DADB2 /* DiaryView.swift */,
+				4438A00F28CFCDA600AA699A /* View */,
+				4438A01028CFCDB600AA699A /* ViewModel */,
 			);
 			path = Diary;
 			sourceTree = "<group>";
@@ -95,6 +101,40 @@
 				44877419285F59A700736C6E /* RootTabView.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		4438A00F28CFCDA600AA699A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				440F68742864FE2D009DADB2 /* DiaryView.swift */,
+				44AA423228CB8FD0004F690D /* DatePicker */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4438A01028CFCDB600AA699A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4438A01128CFCDD500AA699A /* DiaryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4438A01328CFDD6200AA699A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4438A01428CFDD9600AA699A /* Extensions */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		4438A01428CFDD9600AA699A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4438A01528CFDDBC00AA699A /* DateExtensions.swift */,
+				4438A01728CFDE8B00AA699A /* ColorExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		446B982F28CE8DED0064B43E /* Model */ = {
@@ -129,6 +169,7 @@
 				44943527285BD8AD00A91228 /* Assets.xcassets */,
 				44599C67285DE82300F3E600 /* Info.plist */,
 				44960859285F444F0002EA51 /* CustomViews */,
+				4438A01328CFDD6200AA699A /* Helper */,
 				44960855285F16910002EA51 /* Fonts */,
 				44943529285BD8AD00A91228 /* Preview Content */,
 				44ACB24828737BE300456E7F /* Localizable.strings */,
@@ -270,9 +311,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				44877418285F539000736C6E /* AdlerySwashText.swift in Sources */,
+				4438A01828CFDE8B00AA699A /* ColorExtensions.swift in Sources */,
 				44960851285EFDCB0002EA51 /* LaunchView.swift in Sources */,
 				4487741A285F59A700736C6E /* RootTabView.swift in Sources */,
 				440F68752864FE2D009DADB2 /* DiaryView.swift in Sources */,
+				4438A01228CFCDD500AA699A /* DiaryViewModel.swift in Sources */,
+				4438A01628CFDDBC00AA699A /* DateExtensions.swift in Sources */,
 				440F68732864FE1F009DADB2 /* WishesView.swift in Sources */,
 				440F68712864FDF6009DADB2 /* HomeView.swift in Sources */,
 				440F68772864FE3C009DADB2 /* SleepView.swift in Sources */,

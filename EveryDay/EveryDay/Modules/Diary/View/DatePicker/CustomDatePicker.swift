@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct CustomDatePicker: View {
-    @Binding var currentDate: Date
-    @State var currentMonth = 0
     
+    @Binding var currentDate: Date
+    @Binding var currentMonth: Int
     
     var body: some View {
         VStack(spacing: 35){
@@ -67,7 +67,6 @@ struct CustomDatePicker: View {
         .onChange(of: currentMonth) { newValue in
             //update month
          currentDate = getCurrentMonth()
-            print(currentMonth)
         }
     }
     
@@ -136,22 +135,5 @@ struct CustomDatePicker: View {
 struct CustomDatePicker_Previews: PreviewProvider {
     static var previews: some View {
         DiaryView()
-    }
-}
-
-extension Date {
-    func getCurrentMonthDates() -> [Date] {
-        let calendar = Calendar.current
-        
-        //
-        let startDate = calendar.date(from: Calendar.current.dateComponents([.year, .month], from: self))!
-        
-        
-        let range = calendar.range(of: .day, in: .month, for: startDate)!
-        
-        //getting date
-        return range.compactMap { day -> Date in
-            return calendar.date(byAdding: .day, value: day - 1, to: startDate)!
-        }
     }
 }
