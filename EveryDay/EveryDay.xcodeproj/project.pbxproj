@@ -22,7 +22,9 @@
 		4494352B285BD8AD00A91228 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4494352A285BD8AD00A91228 /* Preview Assets.xcassets */; };
 		44960851285EFDCB0002EA51 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44960850285EFDCB0002EA51 /* LaunchView.swift */; };
 		44960857285F17350002EA51 /* Adlery-Swash-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44960856285F17350002EA51 /* Adlery-Swash-trial.ttf */; };
-		44AA423428CB9015004F690D /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AA423328CB9015004F690D /* CustomDatePicker.swift */; };
+		449D7C7B28DA0BF600C4EC74 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449D7C7A28DA0BF600C4EC74 /* CustomDatePicker.swift */; };
+		449D7C7D28DA0CD500C4EC74 /* CustomDatePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449D7C7C28DA0CD500C4EC74 /* CustomDatePickerViewModel.swift */; };
+		44AA423428CB9015004F690D /* CustomOldTemplateDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AA423328CB9015004F690D /* CustomOldTemplateDatePicker.swift */; };
 		44ACB24628737BE300456E7F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44ACB24828737BE300456E7F /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +46,9 @@
 		4494352A285BD8AD00A91228 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		44960850285EFDCB0002EA51 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		44960856285F17350002EA51 /* Adlery-Swash-trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Adlery-Swash-trial.ttf"; sourceTree = "<group>"; };
-		44AA423328CB9015004F690D /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
+		449D7C7A28DA0BF600C4EC74 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
+		449D7C7C28DA0CD500C4EC74 /* CustomDatePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePickerViewModel.swift; sourceTree = "<group>"; };
+		44AA423328CB9015004F690D /* CustomOldTemplateDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOldTemplateDatePicker.swift; sourceTree = "<group>"; };
 		44ACB24728737BE300456E7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		44ACB24928737CB500456E7F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -232,7 +236,9 @@
 		44AA423228CB8FD0004F690D /* DatePicker */ = {
 			isa = PBXGroup;
 			children = (
-				44AA423328CB9015004F690D /* CustomDatePicker.swift */,
+				44AA423328CB9015004F690D /* CustomOldTemplateDatePicker.swift */,
+				449D7C7A28DA0BF600C4EC74 /* CustomDatePicker.swift */,
+				449D7C7C28DA0CD500C4EC74 /* CustomDatePickerViewModel.swift */,
 			);
 			path = DatePicker;
 			sourceTree = "<group>";
@@ -318,11 +324,13 @@
 				4438A01228CFCDD500AA699A /* DiaryViewModel.swift in Sources */,
 				4438A01628CFDDBC00AA699A /* DateExtensions.swift in Sources */,
 				440F68732864FE1F009DADB2 /* WishesView.swift in Sources */,
+				449D7C7B28DA0BF600C4EC74 /* CustomDatePicker.swift in Sources */,
 				440F68712864FDF6009DADB2 /* HomeView.swift in Sources */,
 				440F68772864FE3C009DADB2 /* SleepView.swift in Sources */,
 				446B983128CE8E1E0064B43E /* CalendarDateModel.swift in Sources */,
+				449D7C7D28DA0CD500C4EC74 /* CustomDatePickerViewModel.swift in Sources */,
 				44943524285BD8AA00A91228 /* EveryDayApp.swift in Sources */,
-				44AA423428CB9015004F690D /* CustomDatePicker.swift in Sources */,
+				44AA423428CB9015004F690D /* CustomOldTemplateDatePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

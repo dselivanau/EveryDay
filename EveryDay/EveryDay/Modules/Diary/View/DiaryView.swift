@@ -14,9 +14,7 @@ struct DiaryView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false){
             VStack(spacing: 20){
-                CustomDatePicker(currentDate: $viewModel.currentDate,
-                                 currentMonth: $viewModel.currentMonth,
-                                 selectedDate: $viewModel.selectedDate)
+                CustomDatePicker()
             }
         }
     }
