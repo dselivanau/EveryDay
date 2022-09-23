@@ -9,7 +9,13 @@ import SwiftUI
 
 struct CustomDatePicker: View {
     
-    @ObservedObject var viewModel = CustomDatePickerViewModel()
+    @StateObject var viewModel = CustomDatePickerViewModel()
+    
+    @Binding var selectedDate: Date?
+    
+    init(selectedDate: Binding<Date?> = .constant(nil)) {
+        self._selectedDate = selectedDate
+    }
     
     var body: some View {
         VStack(spacing: 35) {
@@ -53,6 +59,9 @@ struct CustomDatePicker: View {
             LazyVGrid(columns: columns, spacing: 15) {
                 ForEach(viewModel.currentShowDates) { value in
                     CardView(value: value)
+                        .onTapGesture {
+                            selectedDate = value.date
+                        }
                 }
             }
         }

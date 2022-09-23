@@ -10,16 +10,16 @@ import Combine
 
 class CustomDatePickerViewModel: ObservableObject {
     
-    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
-    var currentShowDates = [CalendarDate]()
-    
     @Published var todayDate = Date()
     @Published var currentShowDate = Date()
     @Published var monthDifference = 0
+    var cancellables = Set<AnyCancellable>()
+    
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+    
+    var currentShowDates = [CalendarDate]()
     var monthTitle = ""
     var yearTitle = ""
-    
-    var cancellables = Set<AnyCancellable>()
     
     init() {
         configureCalendarDates()
