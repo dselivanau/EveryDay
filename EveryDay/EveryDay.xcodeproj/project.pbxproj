@@ -11,10 +11,15 @@
 		440F68732864FE1F009DADB2 /* WishesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440F68722864FE1F009DADB2 /* WishesView.swift */; };
 		440F68752864FE2D009DADB2 /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440F68742864FE2D009DADB2 /* DiaryView.swift */; };
 		440F68772864FE3C009DADB2 /* SleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440F68762864FE3C009DADB2 /* SleepView.swift */; };
+		441E8AA628E4D1FB0081A35F /* App+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441E8AA528E4D1FB0081A35F /* App+Injection.swift */; };
+		441E8AA928E4D3DD0081A35F /* DiaryStorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441E8AA828E4D3DD0081A35F /* DiaryStorageProtocol.swift */; };
+		441E8AAC28E4D4510081A35F /* DiaryStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441E8AAB28E4D4510081A35F /* DiaryStorageService.swift */; };
+		441E8AAF28E4DDE50081A35F /* EveryDay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 441E8AAD28E4DDE50081A35F /* EveryDay.xcdatamodeld */; };
 		4438A01228CFCDD500AA699A /* DiaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4438A01128CFCDD500AA699A /* DiaryViewModel.swift */; };
 		4438A01628CFDDBC00AA699A /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4438A01528CFDDBC00AA699A /* DateExtensions.swift */; };
 		4438A01828CFDE8B00AA699A /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4438A01728CFDE8B00AA699A /* ColorExtensions.swift */; };
 		446B983128CE8E1E0064B43E /* CalendarDateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B983028CE8E1E0064B43E /* CalendarDateModel.swift */; };
+		447D927028DDF91200CBAD0D /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447D926F28DDF91200CBAD0D /* PersistenceController.swift */; };
 		44877418285F539000736C6E /* AdlerySwashText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44877417285F539000736C6E /* AdlerySwashText.swift */; };
 		4487741A285F59A700736C6E /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44877419285F59A700736C6E /* RootTabView.swift */; };
 		44943524285BD8AA00A91228 /* EveryDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44943523285BD8AA00A91228 /* EveryDayApp.swift */; };
@@ -26,6 +31,7 @@
 		449D7C7D28DA0CD500C4EC74 /* CustomDatePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449D7C7C28DA0CD500C4EC74 /* CustomDatePickerViewModel.swift */; };
 		44AA423428CB9015004F690D /* CustomOldTemplateDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AA423328CB9015004F690D /* CustomOldTemplateDatePicker.swift */; };
 		44ACB24628737BE300456E7F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44ACB24828737BE300456E7F /* Localizable.strings */; };
+		881DCF6A41853B992AA456B7 /* Pods_EveryDay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 444B079A8B636802396710DB /* Pods_EveryDay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,11 +39,17 @@
 		440F68722864FE1F009DADB2 /* WishesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishesView.swift; sourceTree = "<group>"; };
 		440F68742864FE2D009DADB2 /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
 		440F68762864FE3C009DADB2 /* SleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepView.swift; sourceTree = "<group>"; };
+		441E8AA528E4D1FB0081A35F /* App+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Injection.swift"; sourceTree = "<group>"; };
+		441E8AA828E4D3DD0081A35F /* DiaryStorageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryStorageProtocol.swift; sourceTree = "<group>"; };
+		441E8AAB28E4D4510081A35F /* DiaryStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryStorageService.swift; sourceTree = "<group>"; };
+		441E8AAE28E4DDE50081A35F /* EveryDay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EveryDay.xcdatamodel; sourceTree = "<group>"; };
 		4438A01128CFCDD500AA699A /* DiaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewModel.swift; sourceTree = "<group>"; };
 		4438A01528CFDDBC00AA699A /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		4438A01728CFDE8B00AA699A /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		444B079A8B636802396710DB /* Pods_EveryDay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EveryDay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44599C67285DE82300F3E600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		446B983028CE8E1E0064B43E /* CalendarDateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDateModel.swift; sourceTree = "<group>"; };
+		447D926F28DDF91200CBAD0D /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		44877417285F539000736C6E /* AdlerySwashText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdlerySwashText.swift; sourceTree = "<group>"; };
 		44877419285F59A700736C6E /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 		44943520285BD8AA00A91228 /* EveryDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EveryDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +63,8 @@
 		44AA423328CB9015004F690D /* CustomOldTemplateDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOldTemplateDatePicker.swift; sourceTree = "<group>"; };
 		44ACB24728737BE300456E7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		44ACB24928737CB500456E7F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7BA0423B94FE540903B30895 /* Pods-EveryDay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EveryDay.debug.xcconfig"; path = "Target Support Files/Pods-EveryDay/Pods-EveryDay.debug.xcconfig"; sourceTree = "<group>"; };
+		919703273132A2D293DC4208 /* Pods-EveryDay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EveryDay.release.xcconfig"; path = "Target Support Files/Pods-EveryDay/Pods-EveryDay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +72,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				881DCF6A41853B992AA456B7 /* Pods_EveryDay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		177E0ACEAC66DAB52F86F0A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				444B079A8B636802396710DB /* Pods_EveryDay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		440F686B2864FBA3009DADB2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +130,22 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		441E8AA728E4D3540081A35F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				441E8AA828E4D3DD0081A35F /* DiaryStorageProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		441E8AAA28E4D4210081A35F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				441E8AAB28E4D4510081A35F /* DiaryStorageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		4438A00F28CFCDA600AA699A /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +176,7 @@
 			children = (
 				4438A01528CFDDBC00AA699A /* DateExtensions.swift */,
 				4438A01728CFDE8B00AA699A /* ColorExtensions.swift */,
+				441E8AA528E4D1FB0081A35F /* App+Injection.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -149,11 +189,22 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		447D926E28DDF8F300CBAD0D /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				447D926F28DDF91200CBAD0D /* PersistenceController.swift */,
+				441E8AAD28E4DDE50081A35F /* EveryDay.xcdatamodeld */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
 		44943517285BD8A900A91228 = {
 			isa = PBXGroup;
 			children = (
 				44943522285BD8AA00A91228 /* EveryDay */,
 				44943521285BD8AA00A91228 /* Products */,
+				B04BC25548C00398111466AF /* Pods */,
+				177E0ACEAC66DAB52F86F0A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,14 +220,17 @@
 			isa = PBXGroup;
 			children = (
 				440F686F2864FCE9009DADB2 /* App */,
+				447D926E28DDF8F300CBAD0D /* Core Data */,
 				4496084E285EFC890002EA51 /* Modules */,
-				44943527285BD8AD00A91228 /* Assets.xcassets */,
-				44599C67285DE82300F3E600 /* Info.plist */,
 				44960859285F444F0002EA51 /* CustomViews */,
+				441E8AAA28E4D4210081A35F /* Services */,
+				441E8AA728E4D3540081A35F /* Protocols */,
 				4438A01328CFDD6200AA699A /* Helper */,
 				44960855285F16910002EA51 /* Fonts */,
 				44943529285BD8AD00A91228 /* Preview Content */,
 				44ACB24828737BE300456E7F /* Localizable.strings */,
+				44599C67285DE82300F3E600 /* Info.plist */,
+				44943527285BD8AD00A91228 /* Assets.xcassets */,
 			);
 			path = EveryDay;
 			sourceTree = "<group>";
@@ -243,6 +297,15 @@
 			path = DatePicker;
 			sourceTree = "<group>";
 		};
+		B04BC25548C00398111466AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7BA0423B94FE540903B30895 /* Pods-EveryDay.debug.xcconfig */,
+				919703273132A2D293DC4208 /* Pods-EveryDay.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -250,9 +313,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4494352E285BD8AD00A91228 /* Build configuration list for PBXNativeTarget "EveryDay" */;
 			buildPhases = (
+				2E1411762F1AF5FF0B6D681B /* [CP] Check Pods Manifest.lock */,
 				4494351C285BD8AA00A91228 /* Sources */,
 				4494351D285BD8AA00A91228 /* Frameworks */,
 				4494351E285BD8AA00A91228 /* Resources */,
+				EA967D617CAE7AD7D216CC1F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,19 +376,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E1411762F1AF5FF0B6D681B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EveryDay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA967D617CAE7AD7D216CC1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EveryDay/Pods-EveryDay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EveryDay/Pods-EveryDay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EveryDay/Pods-EveryDay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4494351C285BD8AA00A91228 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				44877418285F539000736C6E /* AdlerySwashText.swift in Sources */,
+				441E8AA628E4D1FB0081A35F /* App+Injection.swift in Sources */,
 				4438A01828CFDE8B00AA699A /* ColorExtensions.swift in Sources */,
+				441E8AA928E4D3DD0081A35F /* DiaryStorageProtocol.swift in Sources */,
 				44960851285EFDCB0002EA51 /* LaunchView.swift in Sources */,
 				4487741A285F59A700736C6E /* RootTabView.swift in Sources */,
 				440F68752864FE2D009DADB2 /* DiaryView.swift in Sources */,
 				4438A01228CFCDD500AA699A /* DiaryViewModel.swift in Sources */,
 				4438A01628CFDDBC00AA699A /* DateExtensions.swift in Sources */,
 				440F68732864FE1F009DADB2 /* WishesView.swift in Sources */,
+				441E8AAF28E4DDE50081A35F /* EveryDay.xcdatamodeld in Sources */,
 				449D7C7B28DA0BF600C4EC74 /* CustomDatePicker.swift in Sources */,
 				440F68712864FDF6009DADB2 /* HomeView.swift in Sources */,
 				440F68772864FE3C009DADB2 /* SleepView.swift in Sources */,
@@ -331,6 +441,8 @@
 				449D7C7D28DA0CD500C4EC74 /* CustomDatePickerViewModel.swift in Sources */,
 				44943524285BD8AA00A91228 /* EveryDayApp.swift in Sources */,
 				44AA423428CB9015004F690D /* CustomOldTemplateDatePicker.swift in Sources */,
+				441E8AAC28E4D4510081A35F /* DiaryStorageService.swift in Sources */,
+				447D927028DDF91200CBAD0D /* PersistenceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +577,7 @@
 		};
 		4494352F285BD8AD00A91228 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BA0423B94FE540903B30895 /* Pods-EveryDay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -479,6 +592,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -494,6 +608,7 @@
 		};
 		44943530285BD8AD00A91228 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 919703273132A2D293DC4208 /* Pods-EveryDay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -508,6 +623,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -543,6 +659,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		441E8AAD28E4DDE50081A35F /* EveryDay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				441E8AAE28E4DDE50081A35F /* EveryDay.xcdatamodel */,
+			);
+			currentVersion = 441E8AAE28E4DDE50081A35F /* EveryDay.xcdatamodel */;
+			path = EveryDay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 44943518285BD8A900A91228 /* Project object */;
 }

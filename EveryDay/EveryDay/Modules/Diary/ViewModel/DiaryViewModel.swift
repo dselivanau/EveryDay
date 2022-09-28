@@ -8,10 +8,14 @@
 import Foundation
 import SwiftUI
 import Combine
+import Resolver
 
 class DiaryViewModel: ObservableObject {
     
     @Published var selectedDate: Date?
+    
+//    @Injected var testService: DiaryStorageProtocol
+//    @Injected var fromMainContainer: DiaryStorageProtocol?
     
     var cancellables = Set<AnyCancellable>()
     

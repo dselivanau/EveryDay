@@ -61,6 +61,7 @@ struct CustomDatePicker: View {
                     CardView(value: value)
                         .onTapGesture {
                             selectedDate = value.date
+                            viewModel.testResolver()
                         }
                 }
             }

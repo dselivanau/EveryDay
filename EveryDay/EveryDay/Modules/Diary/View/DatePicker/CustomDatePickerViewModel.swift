@@ -7,9 +7,11 @@
 
 import Foundation
 import Combine
+import Resolver
 
 class CustomDatePickerViewModel: ObservableObject {
     
+    @Injected var testService: DiaryStorageProtocol
     @Published var todayDate = Date()
     @Published var currentShowDate = Date()
     @Published var monthDifference = 0
@@ -33,6 +35,10 @@ class CustomDatePickerViewModel: ObservableObject {
                 self.prepareNewMonthData(value: newValue)
             }
             .store(in: &cancellables)
+    }
+    
+    func testResolver() {
+        testService.printHelloTest()
     }
     
     private func prepareNewMonthData(value: Int) {

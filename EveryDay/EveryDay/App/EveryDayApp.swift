@@ -11,6 +11,7 @@ import SwiftUI
 struct EveryDayApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    let persistenceController = PersistenceController.shared
     
     var body: some Scene {
         WindowGroup {
@@ -23,7 +24,8 @@ struct EveryDayApp: App {
                             .flatMap { ($0 as? UIWindowScene)?.windows ?? []}
                             .first{$0.isKeyWindow}
                         
-                        window?.rootViewController = UIHostingController(rootView: RootTabView())
+                        let rootTabView = RootTabView().environment(\.managedObjectContext, persistenceController.container.viewContext)
+                        window?.rootViewController = UIHostingController(rootView: rootTabView)
                         window?.makeKeyAndVisible()
                     }
                     
